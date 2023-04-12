@@ -1,1 +1,28 @@
-*{margin: 0px; padding: 0px;} header{text-align: center;background-image: linear-gradient(to bottom,#d8ebff, #f4f4f4);} header div#Logo{text-align: center;} ul{list-style-type: none;} nav li{display: inline-block; height: auto; padding: 0px 50px; text-align: center; font-size: 16px;}nav li a{text-decoration: none; color: black;} body{background-color: #f4f4f4;background-image: url("../images/background.png");background-size: 100%; background-attachment:fixed; background-repeat: no-repeat;} header table,homepage table{width: 80%; align-self: center; margin-left:auto;margin-right:auto;} homepage p#title{padding-top:20%;font-size: 80px;font-weight: 800;}main{text-align: center;}homepage p#introduction{font-size: 30px;} homepage a#main{display: inline-block; padding: 10px 20px; font-size: 20px; margin-top: 30px; text-decoration: none; font-weight: bold; color: black; border:1px black solid ;border-radius: 5px;}
+*{margin: 0px; padding: 0px;}
+@media screen and (max-width: 1920px){
+    header#header_pc{display: block;}
+    header#header_phone{display: none;}
+    .phone{display: none;}
+    .pc{display: auto;}
+    homepage a#main{display: inline-block; padding: 10px 20px; font-size: 20px; margin-top: 30px; text-decoration: none; font-weight: bold; color: black;border-radius: 5px; background-color: #fff; box-shadow: 2px 2px 2px rgba(0,0,0,0.3); border: 1px black solid;}
+}
+@media screen and (max-width: 1300px){
+    header#header_pc{display: none;}
+    header#header_phone{display: block; top:0;}
+    homepage{margin-top: 2rem;}
+    tr.phone{display: inline-block; text-align: center;}
+    .pc{display: none;}
+    homepage a#main{display: inline-block; padding: 8px 16px; font-size: 16px; margin-top: 30px; text-decoration: none; font-weight: bold; color: black;border-radius: 5px; background-color: #fff; box-shadow: 2px 2px 2px rgba(0,0,0,0.3); border: 1px black solid;}
+}
+header{text-align: center;position: fixed; width: 100%; height: 50px;box-shadow: 3px 3px 3px rgba(0,0,0,0.3);background: rgba(255, 255, 255, .7);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);}
+header div#Logo{text-align: center;}
+ul{list-style-type: none;}
+header a{text-decoration: none; color: black;}
+nav li{display: inline-block; height: auto; padding: 0px 50px; text-align: center; font-size: 16px;}
+nav li a{text-decoration: none; color: black;}
+body{background-color: #f4f4f4;background-image: url("../images/background.png");background-size: 100%; background-attachment:fixed; background-repeat: no-repeat;}
+header table,homepage table{width: 80%; align-self: center; margin-left:auto;margin-right:auto;}
+homepage{display: block;}
+homepage table{margin-bottom: 1000%;}
+homepage p#title{padding-top:20%;font-size: 80px;font-weight: 800;}main{text-align: center;}
+homepage p#introduction{font-size: 30px;}
