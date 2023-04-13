@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_CN">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +12,14 @@
     <table>
         <tr>
             <td>
-                <h1><a href="https://ujnpedia.org">UJNPedia</a></h1>
+                <h1><a href="#top">UJNPedia</a></h1>
             </td>
             <td width="70%">
                 <nav>
                     <ul>
-                        <li><a href="#">首页</a></li>
-                        <li><a href="#">校园景色</a></li>
-                        <li><a href="#">校园常用链接</a></li>
+                        <li><a href="#top">首页</a></li>
+                        <li><a href="#Pictures">校园景色</a></li>
+                        <li><a href="#Links">校园常用链接</a></li>
                         <li><a href="#">常见问题Q&A</a></li>
                     </ul>
                 </nav>
@@ -31,7 +31,7 @@
     <table>
         <tr>
             <td>
-                <h1>UJNPedia</h1>
+                <h1><a href="#top">UJNPedia</a></h1>
             </td>
         </tr>
         </tr>
@@ -44,8 +44,9 @@
     </table>
 </header>
 <main>
+    <top></top>
     <homepage>
-        <table>
+        <table id="title">
             <tr>
                 <td>
                     <p id="title">济大百科</p>
@@ -68,7 +69,7 @@
             </tr>
             <tr class="phone">
                 <td>
-                    <a id="main" href="#Pictures">校园常用链接</a>
+                    <a id="main" href="#Links">校园常用链接</a>
                 </td>
             </tr>
             <tr class="phone">
@@ -78,6 +79,64 @@
             </tr>
         </table>
     </homepage>
+    <div id="Pictures">
+        <table>
+            <tr>
+                <td colspan="2" style="height: auto; padding-bottom: 2rem; padding-top: 2.3rem;"><h2>校园景色</h2></td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <img src="./images/schoolpic1.jpg">
+                </td>
+                <td width="60%">
+                    <img src="./images/schoolpic1.jpg">
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td width="60%">
+                    <img src="./images/schoolpic1.jpg">
+                </td>
+                <td width="40%">
+                    <img src="./images/schoolpic1.jpg">
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td width="40%">
+                    <img src="./images/schoolpic1.jpg">
+                </td>
+                <td width="60%">
+                    <img src="./images/schoolpic1.jpg">
+                </td>
+            </tr>
+            <tr style="height:4rem"></tr>
+        </table>
+    </div>
+    <div id="Links" style="margin-top: 1rem;">
+        <table>
+            <tr>
+                <td colspan="2" style="height: auto; padding-bottom: 2rem;"><h2>常用链接</h2></td>
+            </tr>
+        </table>
+    </div>
+    <div id="QandA" style="margin-top: 1rem;">
+        <table>
+            <tr>
+                <td colspan="2" style="height: auto; padding-bottom: 2rem;"><h2>常见问题</h2></td>
+            </tr>
+        </table>
+    </div>
 </main>
+<footer>
+    <table>
+        <tr width="100%">
+            <td>©2023 UJNPedia</td>
+        </tr>
+        <tr><td>萌ICP备19002333号-1</td></tr>
+    </table>
+</footer>
 </body>
 </html>
