@@ -21,7 +21,7 @@ div#Pictures table{margin:auto; padding:0px 10%; width: 100%;border-collapse: se
 div#Pictures table td{height: 15rem;margin: 0px;}
 div#Pictures img{width: 100%; object-fit: cover; height: 100%; box-shadow: 3px -3px 3px rgba(0,0,0,0.1); border-radius: 5px;}
 div#Links table,div#QandA table{margin: auto;}
-@media screen and (max-width: 1920px){
+@media screen{
     header#header_pc{display: block;}
     header#header_phone{display: none;}
     .phone{display: none;}
