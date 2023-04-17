@@ -1,32 +1,39 @@
 *{margin: 0px; padding: 0px; font-family: PingFangSC-Regular,"微软雅黑";}
-header{text-align: center;position: fixed; width: 100%; height: 50px;box-shadow: 3px 3px 3px rgba(0,0,0,0.3);background: rgba(255, 255, 255, 0.5);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);padding-top: 10px;padding-bottom: 10px; z-index:99;}
+header{text-align: center;position: fixed; width: 100%; height: 50px;box-shadow: 3px 3px 3px rgba(0,0,0,0.3);background: rgba(255, 255, 255, 0.7);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);padding-top: 10px;padding-bottom: 10px; z-index:99;}
 header div#Logo{text-align: center;}
 ul{list-style-type: none;}
 h2{font-size: 40px;}
+img#icon{width: 30%; position: fixed; bottom: -3%; right:-3%; z-index:-1;}
 header a{text-decoration: none; color: black;}
 nav li{display: inline-block; height: auto; padding: 0px 20px; text-align: center; font-size: 16px;}
 nav li a{text-decoration: none; color: black; font-size: 19px}
-body{background-color: #f4f4f4;background-image: url("../images/background.png");background-size: 100%; background-attachment:fixed; background-repeat: no-repeat;}
+body{background-image: linear-gradient(#e4f7ff, #f4f4f4);}
 header table,homepage table{width: 80%; align-self: center; margin-left:auto;margin-right:auto;}
 homepage{display: block;}
-homepage table#title{margin-bottom: 15%;}
-homepage p#title{padding-top:20%;font-size: 80px;font-weight: 800;}
+homepage table.title{margin-bottom: 15%;}
+homepage p.title{padding-top:20%;font-size: 80px;font-weight: 800;}
 main{text-align: center;}
-homepage p#introduction{font-size: 30px;}
-homepage a#main:hover{background: rgba(125, 222, 255, 0.3);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px); box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
+homepage p.introduction{font-size: 30px;}
+homepage a.main:hover{background: rgba(125, 222, 255, 0.3);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px); box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
 footer{text-align: center; box-shadow: 3px 3px 3px rgba(0,0,0,0.3);background: rgba(255, 255, 255, 0.7);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px); padding: 30px;}
 footer table{margin-left:auto;margin-right:auto;}
 div#Pictures,div#Links,div#QandA{text-align: center; width: 90%; border-radius: 5px; align-self: center; margin: auto; background: rgba(255, 255, 255, 0.5);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);padding-top: 10px;padding-bottom: 10px; box-shadow: 3px 3px 3px rgba(0,0,0,0.1);}
-div#Pictures table{margin:auto; padding:0px 10%; width: 100%;border-collapse: separate;border-spacing: 5px 0px;}
+div#Pictures table{margin:auto; padding:0px 7%; width: 100%;border-collapse: separate;border-spacing: 5px 0px;}
 div#Pictures table td{height: 15rem;margin: 0px;}
 div#Pictures img{width: 100%; object-fit: cover; height: 100%; box-shadow: 3px -3px 3px rgba(0,0,0,0.1); border-radius: 5px;}
 div#Links table,div#QandA table{margin: auto;}
+a.often{display: inline-block; margin-top: 10px;padding: 10px 35px; font-size: 20px; text-decoration: none; font-weight: bold; color: black;border-radius: 5px; background: rgba(255, 255, 255, 0.5);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px); box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
+a.often:hover{background: rgba(125, 222, 255, 0.3);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px); box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
+#map iframe{border-radius: 5px; box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
+h3{font-size: 1.8rem;}
+div#QandA{margin-bottom: 1rem;}
 @media screen{
     header#header_pc{display: block;}
     header#header_phone{display: none;}
     .phone{display: none;}
-    .pc{display: auto;}
-    homepage a#main{display: inline-block; padding: 10px 20px; font-size: 20px; margin-top: 30px; text-decoration: none; font-weight: bold; color: black;border-radius: 5px; background: rgba(255, 255, 255, 0.5);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px); box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
+    .pc{display: inline;}
+    homepage a.main{display: inline-block; padding: 10px 20px; font-size: 20px; margin-top: 30px; text-decoration: none; font-weight: bold; color: black;border-radius: 5px; background: rgba(255, 255, 255, 0.5);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px); box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
+    a#mapphone{display: none;}
 }
 @media screen and (max-width: 1000px){
     header#header_pc{display: none;}
@@ -35,9 +42,9 @@ div#Links table,div#QandA table{margin: auto;}
     homepage{margin-top: 2rem;}
     tr.phone{display: inline-block; text-align: center;}
     .pc{display: none;}
-    homepage a#main{display: inline-block; padding: 10px 20px; font-size: 20px; margin-top: 30px; text-decoration: none; font-weight: bold; color: black;border-radius: 5px; background: rgba(255, 255, 255, 0.5);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px); box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
-    homepage p#title{padding-top:20%;font-size: 60px;font-weight: 800;}main{text-align: center;}
-    homepage p#introduction{font-size: 25px;}
+    homepage a.main{display: inline-block; padding: 10px 20px; font-size: 20px; margin-top: 30px; text-decoration: none; font-weight: bold; color: black;border-radius: 5px; background: rgba(255, 255, 255, 0.5);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px); box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
+    homepage p.title{padding-top:20%;font-size: 60px;font-weight: 800;}main{text-align: center;}
+    homepage p.introduction{font-size: 25px;}
 }
 @media screen and (max-width: 800px){
     header#header_pc{display: none;}
@@ -45,9 +52,11 @@ div#Links table,div#QandA table{margin: auto;}
     homepage{margin-top: 2rem;}
     tr.phone{display: inline-block; text-align: center;}
     .pc{display: none;}
-    homepage a#main{display: inline-block; padding: 10px 20px; font-size: 20px; margin-top: 30px;}
-    homepage p#title{padding-top:20%;font-size: 60px;font-weight: 800;}main{text-align: center;}
+    homepage a.main{display: inline-block; padding: 10px 20px; font-size: 20px; margin-top: 30px;}
+    homepage p.title{padding-top:20%;font-size: 60px;font-weight: 800;}main{text-align: center;}
     div#Pictures,div#Links,div#QandA{width: 100%;}
+    a#mapphone{display: inline-block;}
+    #map,#maptitle{display: none;}
 }
 @media screen and (max-width: 690px){
     header#header_pc{display: none;}
@@ -55,7 +64,11 @@ div#Links table,div#QandA table{margin: auto;}
     homepage{margin-top: 2rem;}
     tr.phone{display: inline-block; text-align: center;}
     .pc{display: none;}
-    homepage a#main{display: inline-block; padding: 8px; font-size: 16px;}
-    homepage p#title{padding-top:20%;font-size: 40px;font-weight: 800;}main{text-align: center;}
-    homepage p#introduction{font-size: 20px;}
+    homepage a.main{display: inline-block; padding: 8px; font-size: 16px;}
+    homepage p.title{padding-top:20%;font-size: 40px;font-weight: 800;}main{text-align: center;}
+    homepage p.introduction{font-size: 20px;}
+    img#icon{width: 50%; position: fixed; bottom: 30%; right:-5%;}
+}
+@media screen and (min-width: 1800px){
+    img#icon{width: 22%; position: fixed; bottom: -5%; right:-5%;}
 }
